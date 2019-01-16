@@ -98,3 +98,15 @@ and refactors it to be modular rather than global.
 
     npm explore brace
     npm test
+
+## How to upgrade Brace
+
+Sometimes ACE updates (especially when new languages are offered.)  Maybe you'd like to update Brace to keep up.  Here's how:
+
+1. Fork the repo
+1. Clone locally
+1. `npm install`
+1. Change `exports.version` to the new target ACE version.
+    * As of this writing, that's on [index.js line 20257](https://github.com/thlorenz/brace/edit/master/index.js#l20257)
+1. `npm run update`
+1. `npm run test`
